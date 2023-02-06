@@ -1,0 +1,100 @@
+.about_main_page {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .about_main_page_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 80px;
+    }
+  }
+}
+.main_page_text {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    width: 30%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    color: rgba(68, 8, 68, 0.712);
+  }
+}
+.AlexLaura {
+  margin-top: 10%;
+  background-color: rgb(235, 231, 231);
+  .AlexLauratexandimg {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    .AlexLauratext {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      p {
+        width: 500px;
+        margin-top: 20px;
+        font-size: 20px;
+        color:  rgba(70, 11, 70, 0.712);
+      }
+      h2 {
+        font-size: 60px;
+        color: rgba(70, 11, 70, 0.712);
+      }
+    }
+  }
+}
+.aboutorangepage{
+  background-color: rgba(255, 68, 0, 0.623);
+  .aboutorangepageimgtext{
+    width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    .aboutorangepageimg{
+      
+    }
+    .aboutorangepagetext{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      p {
+        width: 500px;
+        margin-top: 20px;
+        font-size: 20px;
+        color:  white;
+      }
+      h3 {
+        font-size: 60px;
+        color: white;
+      }
+      .aboutorangepage_btn{
+        margin-top: 30px;
+        button {
+          cursor: pointer;
+          width: 150px;
+          height: 50px;
+          padding: 15px 40px;
+          border: 1px white solid;
+          a{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

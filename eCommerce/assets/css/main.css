@@ -1,0 +1,575 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: gray 0px 1px 10px;
+}
+nav .navigation {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav .navigation .navbar_logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .navigation .navbar_logo .bar {
+  font-size: 30px;
+  display: none;
+}
+nav .navigation .nav_bar {
+  width: 30%;
+}
+nav .navigation .nav_bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav .navigation .nav_bar ul .fornoneresponsiv {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .navigation .nav_bar ul .fornoneresponsiv li {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+nav .navigation .nav_bar ul .fornoneresponsiv li a {
+  color: black;
+  font-size: 20px;
+}
+nav .navigation .nav_bar ul .fornoneresponsiv li i {
+  font-size: 20px;
+  transition: transform 0.2 ease-in-out;
+}
+nav .navigation .nav_bar ul .fornoneresponsiv li i:hover {
+  transform: rotate(180deg);
+}
+nav .navigation .nav_bar ul li:hover {
+  text-decoration: underline;
+}
+nav .navigation .nav_bar ul .forhover:hover {
+  transform: rotate(180deg);
+}
+nav .navigation .nav_bar ul .nav_dropdown :hover {
+  display: block;
+}
+
+@media only screen and (max-width: 920px) {
+  nav .navigation .navbar_logo .bar {
+    display: block;
+  }
+  nav .navigation .nav_bar ul .fornoneresponsiv {
+    display: none;
+  }
+}
+.handmade {
+  background-image: url("../imgs/handmade.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.handmade .handmade_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.handmade .handmade_text h1 {
+  font-size: 600%;
+  color: white;
+}
+.handmade .handmade_text p {
+  color: white;
+  font-size: 200%;
+}
+.handmade .handmade_text .handmade_btn button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 40px;
+  border: 1px white solid;
+}
+
+.bestsellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bestsellers .bestsellers_text {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(73, 46, 122);
+}
+.bestsellers .bestsellers_cards {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+.bestsellers .bestsellers_cards .bestsellers_cards_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(122, 89, 184);
+}
+.bestsellers .bestsellers_btn {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bestsellers .bestsellers_btn button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 40px;
+  border: 2px rgb(0, 0, 0) solid;
+  background-color: white;
+}
+.bestsellers .bestsellers_btn button:hover {
+  background-color: rgb(51, 19, 80);
+}
+.bestsellers .bestsellers_btn button a {
+  font-size: 100%;
+}
+.bestsellers .bestsellers_btn button a:hover {
+  font-weight: bolder;
+  color: white;
+}
+
+@media only screen and (max-width: 920px) {
+  .bestsellers .bestsellers_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+  .bestsellers .bestsellers_text {
+    font-size: 30px;
+  }
+}
+.homedecor {
+  background-image: url("../imgs/home_decor.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homedecor .homedecor_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homedecor .homedecor_text h1 {
+  font-size: 600%;
+  color: white;
+}
+.homedecor .homedecor_text p {
+  color: white;
+  font-size: 200%;
+}
+.homedecor .homedecor_text .homedecor_btn button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 40px;
+  border: 1px white solid;
+}
+
+.Mina_Sustainability {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.Mina_Sustainability .Mina_Sustainability-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Mina_Sustainability .Mina_Sustainability-cards .About_Mina_Sustainability1 {
+  padding: 20px;
+}
+.Mina_Sustainability .Mina_Sustainability-cards .About_Mina_Sustainability2 {
+  padding: 20px;
+}
+.Mina_Sustainability .Mina_Sustainability-cards img {
+  width: 100%;
+}
+.Mina_Sustainability .Mina_Sustainability-cards .bestsellers_btn button {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 30px;
+  border: 1px rgb(0, 0, 0) solid;
+  background-color: white;
+  font-size: 15px;
+}
+.Mina_Sustainability .Mina_Sustainability-cards h2 {
+  margin-top: 10px;
+  color: rgb(73, 46, 122);
+}
+.Mina_Sustainability .Mina_Sustainability-cards p {
+  margin-top: 10px;
+  color: rgb(73, 46, 122);
+}
+
+@media only screen and (max-width: 920px) {
+  .Mina_Sustainability .Mina_Sustainability-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.newsletter {
+  background-image: url(../imgs/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.newsletter .newsletter_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter .newsletter_text h1 {
+  font-size: 500%;
+  color: white;
+}
+.newsletter .newsletter_text .newsletter_input {
+  opacity: 0.6;
+  border: 0;
+  padding: 5px;
+  width: 40%;
+  height: 40px;
+  margin-top: 30px;
+}
+.newsletter .newsletter_text .newsletter_btn {
+  margin-top: 20px;
+}
+.newsletter .newsletter_text .newsletter_btn button {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 30px;
+  border: 1px rgb(255, 255, 255) solid;
+  background-color: white;
+  font-size: 15px;
+}
+
+.instagram .instagram_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.instagram .instagram_text h2 {
+  color: rgb(73, 46, 122);
+  font-size: 40px;
+}
+.instagram .instagram_cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.instagram .instagram_mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.instagram .instagram_mail p {
+  color: rgb(73, 46, 122);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 920px) {
+  .instagram .instagram_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.shop_main_page {
+  background-image: url("../imgs/shop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop_main_page .shop_main_page_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop_main_page .shop_main_page_text h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.maincentergraytex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.maincentergraytex .centergraytex {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.maincentergraytex .centergraytex .lopabag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.maincentergraytex .centergraytex .lopabag svg {
+  color: gray;
+}
+.maincentergraytex .centergraytex .lopabag svg:hover {
+  color: darkblue;
+}
+.maincentergraytex .centergraytex .lopabag p {
+  font-size: 20px;
+  color: gray;
+}
+.maincentergraytex .centergraytex .lopabag p:hover {
+  color: darkblue;
+}
+
+.shop_nine_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.shop_nine_cards .dropdownleft {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+.shop_nine_cards .dropdownleft p {
+  color: gray;
+  font-size: 15px;
+}
+.shop_nine_cards .dropdownleft p:hover {
+  color: rgb(40, 120, 196);
+}
+.shop_nine_cards .shop_nine_cards {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.shop_nine_cards .shop_nine_cards .shop_card .shop_card_img {
+  overflow: hidden;
+}
+.shop_nine_cards .shop_nine_cards .shop_card .shop_card_img img {
+  max-width: 100%;
+  width: 400px;
+}
+.shop_nine_cards .shop_nine_cards .shop_card .shop_card_img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.shop_nine_cards .shop_nine_cards .shop_card .shop_nine_cards_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_main_page {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-YanWlX24wOIg2vwL.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_main_page .about_main_page_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_main_page .about_main_page_text h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.main_page_text {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_page_text h2 {
+  width: 30%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  color: rgba(68, 8, 68, 0.712);
+}
+
+.AlexLaura {
+  margin-top: 10%;
+  background-color: rgb(235, 231, 231);
+}
+.AlexLaura .AlexLauratexandimg {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.AlexLaura .AlexLauratexandimg .AlexLauratext {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.AlexLaura .AlexLauratexandimg .AlexLauratext p {
+  width: 500px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgba(70, 11, 70, 0.712);
+}
+.AlexLaura .AlexLauratexandimg .AlexLauratext h2 {
+  font-size: 60px;
+  color: rgba(70, 11, 70, 0.712);
+}
+
+.aboutorangepage {
+  background-color: rgba(255, 68, 0, 0.623);
+}
+.aboutorangepage .aboutorangepageimgtext {
+  width: 1150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext p {
+  width: 500px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext h3 {
+  font-size: 60px;
+  color: white;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext .aboutorangepage_btn {
+  margin-top: 30px;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext .aboutorangepage_btn button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 15px 40px;
+  border: 1px white solid;
+}
+.aboutorangepage .aboutorangepageimgtext .aboutorangepagetext .aboutorangepage_btn button a {
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(240, 238, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_icon {
+  display: flex;
+}
+footer .footer_icon i {
+  font-size: 25px;
+  color: black;
+}
+footer .footer_nav {
+  width: 30%;
+}
+footer .footer_nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer_nav ul li {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */
